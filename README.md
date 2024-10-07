@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+1. Fork the codesandbox from https://codesandbox.io/p/devbox/mh3vtj
+2. Run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Exercises
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Feel free to use [nextjs](https://nextjs.org/)'s official documentation to help with the exercise. If you are stuck at an exercise, you can move on to the next one.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Routing
 
-## Learn More
+Add the following routes to the app
 
-To learn more about Next.js, take a look at the following resources:
+a. `/about`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+b. `/<name>/info` in which shows `name` on the browser. For example
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `/calif/info` will show a blank page with "Calif" text
+- `/tamdao/info` will show "Tam Dao"
 
-## Deploy on Vercel
+2. Eslint rules
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Currently, `Image` component imported in `app/page.tsx` is not used. However, `yarn lint` does not yield any warning or error.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <main>
+      Home Page
+    </main>
+  );
+}
+```
+
+Why? If possible, please fix or show an approach to fix the issue. The fix isn't simply removing the `import`. We want error/warning so we can prevent similar pattern in the future.
+
+3. Unit tests
+
+Write unit tests to confirm the followings
+
+a. `Home` component that it has "Home Page"
+b. Bonus: test route `<name>/info`
