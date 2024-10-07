@@ -11,18 +11,18 @@ yarn dev
 
 Feel free to use [nextjs](https://nextjs.org/)'s official documentation to help with the exercise. If you are stuck at an exercise, you can move on to the next one.
 
-1. Routing
+### Routing
 
 Add the following routes to the app
 
 a. `/about`
 
-b. `/<name>/info` in which shows `name` on the browser. For example
+b. `/<name>/info`. For example,
 
 - `/calif/info` will show a blank page with "Calif" text
-- `/tamdao/info` will show "Tam Dao"
+- `/xyz/info` will show "Xyz"
 
-2. Eslint rules
+### Eslint rules
 
 Currently, `Image` component imported in `app/page.tsx` is not used. However, `yarn lint` does not yield any warning or error.
 
@@ -40,7 +40,7 @@ export default function Home() {
 
 Why? If possible, please fix or show an approach to fix the issue. The fix isn't simply removing the `import`. We want error/warning so we can prevent similar pattern in the future.
 
-3. Unit tests
+### Unit tests
 
 Write unit tests to confirm the followings
 
