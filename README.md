@@ -40,9 +40,16 @@ export default function Home() {
 
 Why? If possible, please fix or show an approach to fix the issue. The fix isn't simply removing the `import`. We want error/warning so we can prevent similar pattern in the future.
 
-### Unit tests
+### Tests
 
-Write unit tests to confirm the followings
+#### Unit tests
+
+Write unit tests to verify the followings:
 
 a. `Home` component that it has "Home Page"
+
 b. Bonus: test route `<name>/info`
+
+#### End-to-end tests
+
+e2e tests take time to set up. If possible, suggest one framework for end-to-end tests
