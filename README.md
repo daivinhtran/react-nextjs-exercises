@@ -9,7 +9,7 @@ yarn dev
 
 ## Exercises
 
-Feel free to use [nextjs](https://nextjs.org/)'s official documentation to help with the exercise. If you are stuck at an exercise, you can move on to the next one.
+Feel free to use [nextjs](https://nextjs.org/)'s official documentation to help with the exercises. If you are stuck at an exercise, please ask questions and/or move on to the next one.
 
 ### Routing
 
